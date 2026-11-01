@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
-import { Cookie, Users, Truck, Instagram, ChevronDown, Star } from "lucide-react";
+import { Cookie, Users, Truck, Instagram, ChevronDown } from "lucide-react";
 
 const products = [
   {
@@ -13,21 +13,21 @@ const products = [
     name: "Classic Chocolate Crinkle Cookies",
     price: 20,
     description: "Rich, fudgy, and dusted with powdered sugar — our signature crinkle cookie that started it all.",
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=600&fit=crop&q=80",
+    image: "/images/classic-chocolate-crinkle.jpg",
   },
   {
     id: "red-velvet",
     name: "Red Velvet Crinkle Cookies",
     price: 20,
     description: "Velvety smooth with a hint of cocoa and a gorgeous crimson crackle — a showstopper at any gathering.",
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=600&fit=crop&q=80",
+    image: "/images/red-velvet-crinkle.jpg",
   },
   {
     id: "lemon-zest",
     name: "Lemon Zest Crinkle Cookies",
     price: 20,
     description: "Bright, tangy, and perfectly sweet — a refreshing twist on the classic crinkle with real lemon zest.",
-    image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=600&h=600&fit=crop&q=80",
+    image: "/images/lemon-zest-crinkle.jpg",
   },
 ];
 
@@ -46,24 +46,6 @@ const valueProps = [
     icon: Truck,
     title: "Pickup, Delivery & Shipping",
     description: "Local Miami delivery or shipped anywhere",
-  },
-];
-
-const testimonials = [
-  {
-    name: "Sarah M.",
-    text: "These are the best crinkle cookies I've ever had! The chocolate ones are absolutely divine.",
-    rating: 5,
-  },
-  {
-    name: "David R.",
-    text: "Ordered for a party and everyone asked where I got them. The red velvet is a must-try!",
-    rating: 5,
-  },
-  {
-    name: "Maria L.",
-    text: "So impressed by these young entrepreneurs! Delicious cookies and amazing service.",
-    rating: 5,
   },
 ];
 
@@ -242,38 +224,6 @@ export default function Home() {
                     {prop.description}
                   </p>
                 </motion.div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#FAF7F2]">
-        <div className="mx-auto max-w-7xl">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-[#2C1810] mb-4">
-              What Our Customers Say
-            </h2>
-            <p className="text-[#8B7E74] text-lg">
-              Don&apos;t just take our word for it
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <AnimatedSection key={testimonial.name}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-[#C8A96E] text-[#C8A96E]" />
-                    ))}
-                  </div>
-                  <p className="text-[#2C1810] mb-4 leading-relaxed italic">
-                    &ldquo;{testimonial.text}&rdquo;
-                  </p>
-                  <p className="font-semibold text-[#8B7E74]">— {testimonial.name}</p>
-                </div>
               </AnimatedSection>
             ))}
           </div>

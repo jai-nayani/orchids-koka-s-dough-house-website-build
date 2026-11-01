@@ -17,19 +17,19 @@ const products = [
     id: "classic-chocolate",
     name: "Classic Chocolate",
     price: 20,
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=200&h=200&fit=crop&q=80",
+    image: "/images/classic-chocolate-crinkle.jpg",
   },
   {
     id: "red-velvet",
     name: "Red Velvet",
     price: 20,
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=200&h=200&fit=crop&q=80",
+    image: "/images/red-velvet-crinkle.jpg",
   },
   {
     id: "lemon-zest",
     name: "Lemon Zest",
     price: 20,
-    image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=200&h=200&fit=crop&q=80",
+    image: "/images/lemon-zest-crinkle.jpg",
   },
 ];
 

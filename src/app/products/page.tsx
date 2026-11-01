@@ -13,7 +13,7 @@ const products = [
     price: 20,
     description: "Rich, fudgy, and dusted with powdered sugar — our signature crinkle cookie that started it all.",
     longDescription: "Our Classic Chocolate Crinkle Cookies are the heart and soul of Koka's Dough House. Each cookie is baked to perfection with a deep, fudgy center and that signature crackled powdered sugar top. Made with premium cocoa and real butter, these cookies deliver an indulgent chocolate experience that will have you reaching for more.",
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&h=800&fit=crop&q=80",
+    image: "/images/classic-chocolate-crinkle.jpg",
   },
   {
     id: "red-velvet",
@@ -21,7 +21,7 @@ const products = [
     price: 20,
     description: "Velvety smooth with a hint of cocoa and a gorgeous crimson crackle — a showstopper at any gathering.",
     longDescription: "A stunning twist on the classic crinkle, our Red Velvet cookies combine the subtle cocoa flavor of red velvet with the soft, chewy texture of a perfectly baked crinkle cookie. The beautiful red color peeking through the powdered sugar cracks makes these cookies as gorgeous as they are delicious.",
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&h=800&fit=crop&q=80",
+    image: "/images/red-velvet-crinkle.jpg",
   },
   {
     id: "lemon-zest",
@@ -29,7 +29,7 @@ const products = [
     price: 20,
     description: "Bright, tangy, and perfectly sweet — a refreshing twist on the classic crinkle with real lemon zest.",
     longDescription: "For those who love a bright, citrusy treat, our Lemon Zest Crinkle Cookies are pure sunshine in cookie form. Made with fresh lemon zest and a touch of lemon juice, these cookies offer a perfect balance of tart and sweet, with the same soft, chewy texture our crinkle cookies are known for.",
-    image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?w=800&h=800&fit=crop&q=80",
+    image: "/images/lemon-zest-crinkle.jpg",
   },
 ];
 
