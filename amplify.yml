@@ -1,0 +1,22 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm use 20
+        - npm ci --no-audit --no-fund
+    build:
+      commands:
+        # Amplify only exposes console environment variables to the build step.
+        # Copy the Stripe key into .env.production so the server-side checkout
+        # code can read it at runtime. Fails the build if the key is missing.
+        - env | grep -E '^STRIPE_SECRET_KEY=' >> .env.production
+        - npm run build
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .next/cache/**/*
+      - node_modules/**/*
